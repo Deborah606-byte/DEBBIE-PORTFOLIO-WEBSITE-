@@ -9,6 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet"/>
     <link href="../CSS/about.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <!--BOOSTRAP FOR CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -75,20 +76,29 @@
 
    <section class="lastpart">
     <div class="emailform">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Leave a message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+      <h4>Let's Connect</h4>
+      <form onsubmit="return validateForm()">
+        <div class="container">
+        <label for="fname">FIRST NAME</label>
+        <input type="text" name="firstname" required>
+
+        <label for="lname">LAST NAME</label>
+        <input type="text" name="surname" required>
+
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" required>
+
+        <textarea name="message" rows="5" cols="60">Leave a message</textarea>
+
+        <input type="submit" name="submit">
+        </div>
+    </form>
     </div>
     <div class="together">
       <h4>Want us to work together?</h4>
       <p>Good websites must be admired for it's creativity and lively contents. <br>
         Web developers must be able to admire each others work and show appreciation when needed. <br>
-        Do you want to partner with me for a successful, ceative and good content.
+        Do you want to partner with me for a successful, creative and good content.
         Contact me and let us talk it out.
         I can also help with your adminstrative works and secretarial works.
         Have fun whiles exploring all the wonderful opportunities life have to offer.
@@ -96,8 +106,22 @@
       </p>
     </div>
    </section>
+
+   <footer>
+    <div class="connect">
+      <h4>Let's Talk</h4>
+          <a href="https://www.facebook.com/deborah.paintsil.904"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/+23058418557"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://t.me/DeborahAma"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/"><i class="fab fa-linkedin-in"></i></a>    
+    </div>
+    <div class="end">
+      <p>&copy; 2022 DEBBIE</p>
+    </div>
+   </footer>
    
    <!--BOOSTRAP FOR JS-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   <link href="../JAVASCRIPT/about.js" rel="javascript">
 </body>
 </html>

@@ -60,10 +60,10 @@ ul{
     text-transform: uppercase;
 }
 .container1{
-    background-color: lightgoldenrodyellow;
+    background-color: bisque;
     width: 100%;
     text-align: center;
-    height: 350px;
+    height: 400px;
 }
 .container1 h2{
     text-transform: uppercase;
@@ -79,7 +79,7 @@ ul{
 }
 .container1 ul li{
     padding: 15px;
-    color: orange;
+    color: black;
     font-weight: 500;
 }
 .lastpart{
@@ -94,17 +94,61 @@ ul{
 .together{
     width: 50%;
     margin-top: 30px;
+    height: 600px;
 }
 .emailform{
      background-color: rgb(39, 115, 140);
-     margin-right: 50px;
+     margin-right: 30px;
 }
-.together{
-    background-color: lightgoldenrodyellow;
+form{ 
+    color: black;
+    width: 100%;
+    display: flex;
+    margin-top: -50px;
+}
+form input[type = "text"],
+form input[type = "email"]
+
+{
+    border: 1px solid orangered;
+    padding: 10px 15px;
+    border-radius: 1.0em;
+    color: blue;
+    margin-bottom: 20px;
+    width: 100%;
 }
 label{
-    color: orange;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
 }
+textarea{
+    width: 100%;
+    border-radius: 1.0em;
+    margin-top: 40px;
+    resize: none;
+    border: 1px solid orangered;
+    background-color: white;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+form input[type = "submit"]
+{
+    margin-top: 20px;
+    width: 100%;
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid orangered;
+    border-radius: 1.0em;
+    margin-bottom: 20px;
+ 
+}
+.together{
+    background-color: bisque;
+}
+.emailform,
 .together h4{
     color: orangered;
     font-style: italic;
@@ -112,4 +156,43 @@ label{
 .together p{
     font-style: italic;
     font-weight: 500;
+    line-height: 40px;
+}
+footer{
+    margin-top: 50px;
+    background-color:rgb(39, 115, 140);
+    text-align: center;
+} 
+.connect a{
+    text-decoration: none;
+}
+.connect a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: orangered;
+    transition: all 0.2s ease;
+}
+.connect{
+    margin-bottom: 20px;
+}
+@media(max-width: 574px){
+    /*for smartphones*/
+    .lastpart{
+        display: flex;
+        flex-direction: column;
+    }
+    .emailform,
+    .together{
+        width: 100%;
+    }
+    .emailform,
+    .together h4{
+        text-align: center;
+    }
 }
