@@ -37,23 +37,23 @@
           </nav>
    </header>  
 
-   <div class="container">
+   <div class="jumbotron intro-jumbotron">
        <h2>Projects</h2>
        <p>Been a computing student and a newbie in web development, 
            I have worked on various courseworks and projects in school <br>
            Below are some selections of the projects
         </p>
         <div class="row">
-            <div class="col">
-                <img src="../IMAGES/concierge.png" allt="concierge">
+            <div class="col-md-4">
+                <img src="../IMAGES/concierge.png" allt="concierge" class="img-fluid project">
                 <h4>A concierge website</h4>
             </div>
-            <div class="col">
-                <img src="../IMAGES/faq.png" alt="faq">
+            <div class="col-md-4">
+                <img src="../IMAGES/faq.png" alt="faq" class="img-fluid project">
                 <h4>A FAQ section for a concierge website</h4>
             </div>
-            <div class="col">
-                <img src="../IMAGES/wireframe.png" alt="wireframe">
+            <div class="col-md-4">
+                <img src="../IMAGES/wireframe.png" alt="wireframe" class="img-fluid project">
                 <h4>A wireframe for the website</h4>
             </div>
         </div>
@@ -61,64 +61,73 @@
 
     <br>
 
-   <div class="container1">
-     <h2>Skillset</h2>
-     <p>These past few years I have built basic skills in certain fields. <br>
-       <ul>
-         <li>Adminstrative skills</li>
-         <li>Basic computing skills, such as knowlegde in Microsft Word, Excel and PowerPoint</li>
-         <li>Web development skills, the use of HTML, CSS and JavaScript</li>
-         <li>Creativity and team-player</li>
-       </ul>
-     </p>
+   <div class="jumbotron skillset-jumbotron">
+     <div class="row">
+       <div class="col-md-12">
+        <h2>Skillset</h2>
+        <p>These past few years I have built basic skills in certain fields. <br>
+          <ul>
+            <li>Adminstrative skills</li>
+            <li>Basic computing skills, such as knowlegde in Microsft Word, Excel and PowerPoint</li>
+            <li>Web development skills, the use of HTML, CSS and JavaScript</li>
+            <li>Creativity and team-player</li>
+          </ul>
+        </p>
+       </div>
+     </div>
 
    </div>
-
-   <section class="lastpart">
-    <div class="emailform">
-      <h4>Let's Connect</h4>
-      <form onsubmit="return validateForm()">
-        <div class="container">
-        <label for="fname">FIRST NAME</label>
-        <input type="text" name="firstname" required>
-
-        <label for="lname">LAST NAME</label>
-        <input type="text" name="surname" required>
-
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" required>
-
-        <textarea name="message" rows="5" cols="60">Leave a message</textarea>
-
-        <input type="submit" name="submit">
+   
+   <div class="jumbotron lastpart-jumbrotron">
+    <div class="row">
+      <div class="col-md-6 emailform">
+          <h4>Let's Connect</h4>
+          <form onsubmit="return validateForm()">
+            <div class="container">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" name="firstname" required>
+    
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="surname" required>
+    
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required>
+    
+            <textarea name="message" rows="5" cols="60">Leave a message</textarea>
+    
+            <input type="submit" name="submit">
+            </div>
+        </form>
         </div>
-    </form>
+        <div class="col-md-6 together">
+          <h4>Want us to work together?</h4>
+          <p>Good websites must be admired for it's creativity and lively contents. <br>
+          Web developers must be able to admire each others work and show appreciation when needed. <br>
+          Do you want to partner with me for a successful, creative and good content.
+          Contact me and let us talk it out.
+          I can also help with your adminstrative works and secretarial works.
+          Have fun whiles exploring all the wonderful opportunities life have to offer.
+          The future is exciting.
+        </p>
+      </div>        
+        
+      </div>
     </div>
-    <div class="together">
-      <h4>Want us to work together?</h4>
-      <p>Good websites must be admired for it's creativity and lively contents. <br>
-        Web developers must be able to admire each others work and show appreciation when needed. <br>
-        Do you want to partner with me for a successful, creative and good content.
-        Contact me and let us talk it out.
-        I can also help with your adminstrative works and secretarial works.
-        Have fun whiles exploring all the wonderful opportunities life have to offer.
-        The future is exciting.
-      </p>
-    </div>
-   </section>
 
-   <footer>
-    <div class="connect">
-      <h4>Let's Talk</h4>
-          <a href="https://www.facebook.com/deborah.paintsil.904"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://wa.me/+23058418557"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://t.me/DeborahAma"><i class="fab fa-telegram"></i></a>
-          <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/"><i class="fab fa-linkedin-in"></i></a>    
+    <div class="jumbotron footer-jumbotron">
+      <div class="connect">
+        <h4>Let's Talk</h4>
+            <a href="https://www.facebook.com/deborah.paintsil.904"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/+23058418557"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/DeborahAma"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/deborah-paintsil-a2b4aa1a5/"><i class="fab fa-linkedin-in"></i></a>    
+      </div>
+      <div class="end">
+        <p>&copy; 2022 DEBBIE</p>
+      </div>
     </div>
-    <div class="end">
-      <p>&copy; 2022 DEBBIE</p>
-    </div>
-   </footer>
+
+   
    
    <!--BOOSTRAP FOR JS-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

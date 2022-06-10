@@ -3,7 +3,6 @@ body{
     font-family: "Poppins";
 }
 header{
-    width: 100%;
     top:0;
     left: 0;
 }
@@ -25,33 +24,28 @@ ul{
 .navbar a:hover{
     color: orange;
 }
-.container{
-    margin-top: 60px;
-    background-color: rgb(39, 115, 140);
-    width: 100%;
-}
-.container h2{
-    margin-bottom: 30px;
-    color: white;
+.intro-jumbotron{
+    padding: 4em 6em;
     text-align: center;
+    background-color: rgb(39, 115, 140);
+}
+.intro-jumbotron h2{
+    color: white;
     text-transform: uppercase;
 }
-.container p{
+.intro-jumbotron p{
     text-align: center;
     color: orange;
     margin-bottom: 50px;
 }
-.row .col{
+.row .col-md-4{
     background: bisque;
     height: 500px;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
 }
-.row img{
-    width: 300px;
-    height: 300px;
+.project{
     margin-top: 70px;
+    min-height: 300px;
 }
 .row h4{
     color: orangered;
@@ -59,52 +53,37 @@ ul{
     padding: 20px;
     text-transform: uppercase;
 }
-.container1{
+.skillset-jumbotron{
     background-color: bisque;
-    width: 100%;
     text-align: center;
-    height: 400px;
+    min-height: 500px;
 }
-.container1 h2{
+.skillset-jumbotron h2{
     text-transform: uppercase;
     color: orangered;
-    margin-bottom: 20px;
+    padding: 1em 0.5em;
 }
-.container1 p{
+.skillset-jumbotron p{
     font-style: italic;
     font-weight: 500;
 }
-.container1 ul{
+.skillset-jumbotron ul{
     list-style-type: none;
 }
-.container1 ul li{
+.skillset-jumbotron ul li{
     padding: 15px;
     color: black;
-    font-weight: 500;
+    font-weight: 400;
 }
-.lastpart{
-    width: 100%; 
-    display: flex;
-    box-sizing: border-box;
+.lastpart-jumbrotron{ 
     color: black;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.emailform,
-.together{
-    width: 50%;
-    margin-top: 30px;
-    height: 600px;
+    padding: 2em 0;
 }
 .emailform{
      background-color: rgb(39, 115, 140);
-     margin-right: 30px;
 }
 form{ 
     color: black;
-    width: 100%;
-    display: flex;
-    margin-top: -50px;
 }
 form input[type = "text"],
 form input[type = "email"]
@@ -148,7 +127,7 @@ form input[type = "submit"]
 .together{
     background-color: bisque;
 }
-.emailform,
+.emailform, 
 .together h4{
     color: orangered;
     font-style: italic;
@@ -158,8 +137,7 @@ form input[type = "submit"]
     font-weight: 500;
     line-height: 40px;
 }
-footer{
-    margin-top: 50px;
+.footer-jumbotron{
     background-color:rgb(39, 115, 140);
     text-align: center;
 } 
@@ -175,12 +153,13 @@ footer{
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: orangered;
+    color: orange;
     transition: all 0.2s ease;
 }
-.connect{
-    margin-bottom: 20px;
+.end{
+    color: white;
 }
+
 @media(max-width: 574px){
     /*for smartphones*/
     .lastpart{
